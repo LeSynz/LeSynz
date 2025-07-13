@@ -11,11 +11,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)](https://nodejs.org)
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.com)
 
-### ✨ Key Features:
-- **🎯 Fully Customizable** - JSON config, environment variables, interactive setup wizard
-- **⚡ Real-time Monitoring** - Instant notifications for process changes and errors
-- **📊 Metrics Server** - Built-in HTTP server with Prometheus-compatible metrics
-- **🧪 100% Test Coverage** - Comprehensive testing with 12 test categories
+🎯 **Fully Customizable** • ⚡ **Real-time Monitoring** • 📊 **Metrics Server** • 🧪 **100% Test Coverage**
 
 ```bash
 npm install && npm run setup && npm start
@@ -27,21 +23,13 @@ npm install && npm run setup && npm start
 
 **Node.js Developer** specializing in **Discord bot development** and monitoring systems.
 
-### 🎯 What I Do:
-- 🤖 **Discord Bot Development** - Custom bots with slash commands and advanced features
-- 🔍 **Process Monitoring** - PM2 automation and uptime tracking solutions
-- 🌐 **Web Development** - Full-stack applications with modern JavaScript
-- 🛠️ **Developer Tools** - Automation and productivity solutions
+**What I build:**
+- 🤖 Discord bots with slash commands and advanced features
+- 🔍 PM2 automation and uptime tracking solutions
+- 🌐 Full-stack web applications
+- 🛠️ Developer tools and automation
 
-### 🛠️ Tech Stack:
-```
-JavaScript (ES6+)  ████████████████      Advanced
-Node.js           ████████████████      Advanced
-Discord.js        ████████████████      Advanced
-HTML/CSS          ████████████████      Proficient
-```
-
-**Tools:** Express.js • PM2 • Discord API • Git • npm • MongoDB • SQLite
+**Tech Stack:** JavaScript • Node.js • Discord.js • Express.js • PM2 • MongoDB
 
 ---
 
@@ -54,15 +42,9 @@ HTML/CSS          ████████████████      Proficie
 
 ---
 
-##  Let's Connect
-
-- 🌐 **Website:** [synz.xyz](https://synz.xyz/)
-- 💼 **GitHub:** [@LeSynz](https://github.com/LeSynz)
-- 📧 **Contact:** Available on my website
-
----
-
 **💡 "Building reliable Discord bots and monitoring solutions with Node.js"**
+
+**Connect:** [synz.xyz](https://synz.xyz/) • [@LeSynz](https://github.com/LeSynz)
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=LeSynz&color=blueviolet&style=flat-square" alt="Profile Views" />
