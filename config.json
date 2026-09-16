@@ -1,0 +1,58 @@
+{
+  "header": {
+    "user": "dylan",
+    "host": "lesynz"
+  },
+  "info": {
+    "os": "Linux Ubuntu 26.04",
+    "birthday": "2007-10-19",
+    "school": "Self-taught",
+    "role": "Student",
+    "ide": "VS Code"
+  },
+  "languages": {
+    "programming": [
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "Python"
+    ],
+    "computer": [
+      "HTML",
+      "CSS",
+      "JSON",
+      "YAML"
+    ],
+    "real": [
+      "English"
+    ]
+  },
+  "hobbies": {
+    "competitive": "TODO: e.g. Competitive CS2",
+    "creative": "TODO: e.g. Minecraft (Server Hosting + Builds)"
+  },
+  "contact": {
+    "email": "bigman@synz.xyz",
+    "discord": "lesynz"
+  },
+  "github": {
+    "username": "LeSynz",
+    "exclude_repos": [],
+    "exclude_langs": [],
+    "count_forks": false
+  },
+  "theme": {
+    "background": "#111110",
+    "page": "#0a0a09",
+    "border": "#222220",
+    "accent": "#39ff6a",
+    "accent_dim": "#1a5c30",
+    "label": "#7f817c",
+    "value": "#c8cac4",
+    "leader": "#333330",
+    "addition": "#39ff6a",
+    "deletion": "#ff5c57",
+    "font": "Share Tech Mono",
+    "font_display": "Syne"
+  }
+}
