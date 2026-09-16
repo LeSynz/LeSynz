@@ -1,0 +1,12 @@
+{
+  "name": "profile-card",
+  "private": true,
+  "description": "Generates the terminal-style profile card on my GitHub profile",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/generate-card.js",
+    "preview": "node scripts/generate-card.js --offline"
+  }
+}

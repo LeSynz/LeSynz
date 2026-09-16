@@ -1,0 +1,265 @@
+{
+  "spec": "4b7d948bc602e3f8",
+  "repos": {
+    "e0d63844c9c11ad4": {
+      "head": "2d764a1cb18fd3232b95a05219ec05faa9ad633b",
+      "additions": 58,
+      "deletions": 0
+    },
+    "69c058e417e69c73": {
+      "head": "81e36b293db7411a85b931046597633f041d70a5",
+      "additions": 12388,
+      "deletions": 846
+    },
+    "23ce68c0bf8c3731": {
+      "head": "a0d14c07804cc779841dd73a6559eafe9bce248e",
+      "additions": 10587,
+      "deletions": 1137
+    },
+    "8be7b77b74e3cb16": {
+      "head": "68ac8810cd3ecad0c0f4d08a22b869e73eca25ad",
+      "additions": 2367,
+      "deletions": 106
+    },
+    "e29e9cebf063ea5f": {
+      "head": "5ac930e11278d31103979132dcaf24652994bc01",
+      "additions": 3121,
+      "deletions": 0
+    },
+    "3673262e22c84d49": {
+      "head": "a60bf39faeca958d93de9c2df1d3b80a298add08",
+      "additions": 1587,
+      "deletions": 33
+    },
+    "1b69c36556feaa88": {
+      "head": "422974a0de8c2dfcc97e1a8f2b566a1d9b0c6ab8",
+      "additions": 894,
+      "deletions": 0
+    },
+    "1f0e8ccc7eb9dc13": {
+      "head": "68a4841c568e09891699dcddad6348d27e24a4fa",
+      "additions": 1027,
+      "deletions": 29
+    },
+    "9bdcd493ff127580": {
+      "head": "0846c071f9f3f817ff7f09dbe0dca9dcfb3874dc",
+      "additions": 38971,
+      "deletions": 329
+    },
+    "14f84a6822237990": {
+      "head": "109593f14526b73d32a2c5b265fe7c63289d9dc0",
+      "additions": 1224,
+      "deletions": 112
+    },
+    "f19a8b31be997459": {
+      "head": "2b2e74192b7d780d4175bcacb7131731268f1711",
+      "additions": 1734,
+      "deletions": 22
+    },
+    "d6ee5fe5059f1319": {
+      "head": "21475c56afe10b82f040f9fc413c73dc9d5971e3",
+      "additions": 2864,
+      "deletions": 0
+    },
+    "d74fb7c40f7d75f3": {
+      "head": "ee147e94f932c4d92f185e3a56c5a1839f410694",
+      "additions": 1765,
+      "deletions": 0
+    },
+    "fd1890afaf4b6544": {
+      "head": "b90c2471584e3b33051cd55f931f24df597b80ee",
+      "additions": 6972,
+      "deletions": 426
+    },
+    "2ef7d88861288963": {
+      "head": "28fa694e7bf99384dda71673148aab8c91465d84",
+      "additions": 11860,
+      "deletions": 800
+    },
+    "7e95808cc85cdeb7": {
+      "head": "9f2eb6ff54545854fd924e3ccbd5be253dbe93ba",
+      "additions": 10915,
+      "deletions": 364
+    },
+    "d1b20a14918e21c8": {
+      "head": "eedbb549ec5e8d519e7951a23a24ae45424c08d0",
+      "additions": 59,
+      "deletions": 3
+    },
+    "304303ff8182bbbc": {
+      "head": "4ca080671744937e7ad51c14b2dfc47abe3752c4",
+      "additions": 8689,
+      "deletions": 5
+    },
+    "c2cef2c8cb322314": {
+      "head": "5333c6d7e1bc15ebcac8e1f94472c1024dad37ef",
+      "additions": 4058,
+      "deletions": 164
+    },
+    "3bdd9fddc4b04b4f": {
+      "head": "e8dd7babc4f64f581312a071fda616ea57645742",
+      "additions": 1566,
+      "deletions": 128
+    },
+    "a9fa91f7b4a848ee": {
+      "head": "45f035ac1b2256d300038db09454cd97b7c29f77",
+      "additions": 235,
+      "deletions": 184
+    },
+    "0e6a8e0b849ed9b0": {
+      "head": "db674b5f6ac7e8dcb83f9e539a601c3e2a6ff972",
+      "additions": 5,
+      "deletions": 0
+    },
+    "3e193c4461a5a742": {
+      "head": "47493f4825f900c600bc05e7f18cf16081f6de41",
+      "additions": 1045,
+      "deletions": 140
+    },
+    "d6f9df20397262da": {
+      "head": "084428892f16877bad06abbffd8219ede3dc3b33",
+      "additions": 1242,
+      "deletions": 118
+    },
+    "283c576e7a728fd8": {
+      "head": "10ee4bfee94123c94188c9cc44c4b5c447405cfa",
+      "additions": 1176,
+      "deletions": 167
+    },
+    "01dd7c3d77fca989": {
+      "head": "7c243eea39834bc115e589815fbf475088e42012",
+      "additions": 14209,
+      "deletions": 570
+    },
+    "db354992ab74c8fa": {
+      "head": "c02dee8a9087554364e115306796d692d01c572e",
+      "additions": 3393,
+      "deletions": 45
+    },
+    "3c091622234e0a3c": {
+      "head": "b312301574be5a7d423586e03994cd89c011a4e8",
+      "additions": 16959,
+      "deletions": 2882
+    },
+    "6e6f185bfd8a981f": {
+      "head": "99f16abb6a19578e0f675d519fbc5e22bc530198",
+      "additions": 4848,
+      "deletions": 108
+    },
+    "e6d27dd01fc63c4a": {
+      "head": "f81926eeb58347bf85cfcdf28e539fc7aee4e137",
+      "additions": 9424,
+      "deletions": 4932
+    },
+    "1abf5aef2a852d09": {
+      "head": "4edea3004a0d39b3019f09b9ec2a4a8473281944",
+      "additions": 18578,
+      "deletions": 1606
+    },
+    "da2159567820051f": {
+      "head": "35f1c8dd9a0d0967eebe10c158c4e761f3ed1284",
+      "additions": 4586,
+      "deletions": 25
+    },
+    "dd9a1373f49b0fc6": {
+      "head": "a73512cb6a33c9be56b66779cb9beef6c6ab20eb",
+      "additions": 1224,
+      "deletions": 0
+    },
+    "50659b4aee2085dc": {
+      "head": "e5ea202e7988d43e31ddef9c0e4d9efd33d48a3e",
+      "additions": 1098,
+      "deletions": 0
+    },
+    "d30a232e1fdc9b4c": {
+      "head": "555fcfc0b8ce6b0551582b96dfdb191ca29bb012",
+      "additions": 98,
+      "deletions": 0
+    },
+    "e93e3b75761c5cdf": {
+      "head": "44a24def1591e52601e6dfa8be3ba639873f19ae",
+      "additions": 227,
+      "deletions": 3
+    },
+    "5a87780d752db6c5": {
+      "head": "266bbe788525ffdfe610dcc5a9172054aa978334",
+      "additions": 150,
+      "deletions": 4
+    },
+    "d10db27eae463bba": {
+      "head": "a921c7b11e36f257a3240a7e70328276c006c047",
+      "additions": 289,
+      "deletions": 23
+    },
+    "5413da4625e8d033": {
+      "head": "0e95a21b109b822f728807610ab99f00dbee74c8",
+      "additions": 6420,
+      "deletions": 615
+    },
+    "bc2f5cd925227f94": {
+      "head": "e195bf9c75d585bc338015b94ccd2a59adc20904",
+      "additions": 14415,
+      "deletions": 0
+    },
+    "c468326499d9ad81": {
+      "head": "983928ce3277d59c5bfddadec8229de3c34af90b",
+      "additions": 1806,
+      "deletions": 190
+    },
+    "30cf827b2c0db2fd": {
+      "head": "89e628ae50919b8f69786b1de5bc0309cd5400bf",
+      "additions": 1065,
+      "deletions": 0
+    },
+    "284c72db850faee8": {
+      "head": "898a618738590c1e8978b5149dbaa8cda6edd665",
+      "additions": 5497,
+      "deletions": 1084
+    },
+    "56008faa54dcfcbf": {
+      "head": "b0e293cc90155d2b5d5ac40d42ffba5e859a0272",
+      "additions": 3832,
+      "deletions": 1545
+    },
+    "25f93d2f297d577f": {
+      "head": "010d5b72fd4945d3ed4fed03a665072636877b35",
+      "additions": 1151,
+      "deletions": 1
+    },
+    "f2398ab705ec0c2a": {
+      "head": "138e20798a3ac43b5929438833d2243664865d79",
+      "additions": 17163,
+      "deletions": 3181
+    },
+    "fd086e65da920de3": {
+      "head": "11c3613ad3a9d4de55030fc1c163aa4ab993a5fc",
+      "additions": 6635,
+      "deletions": 2375
+    },
+    "46b42b4229cd7a39": {
+      "head": "c81f025a9503bde68f4b52abce8db7d30e9370b2",
+      "additions": 241,
+      "deletions": 0
+    },
+    "3be12d00d076e7e5": {
+      "head": "d5a38bef934d220da811f6a1579cf3ede88a7096",
+      "additions": 1924,
+      "deletions": 303
+    },
+    "fa6b127308eec8ba": {
+      "head": "1c2dc25c8712ccfd8bf3114fd21d6d52f2ece3b2",
+      "additions": 1369,
+      "deletions": 4
+    },
+    "816835aec98c36aa": {
+      "head": "2444f05fe984604a239e698516070f34f9949b2a",
+      "additions": 254,
+      "deletions": 0
+    },
+    "0586b4916c1f09d1": {
+      "head": "676eeb5a85868a1e256e3b9a2ace496004208160",
+      "additions": 218,
+      "deletions": 0
+    }
+  }
+}

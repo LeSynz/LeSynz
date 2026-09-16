@@ -1,58 +1,133 @@
 {
-  "header": {
-    "user": "dylan",
-    "host": "lesynz"
-  },
-  "info": {
-    "os": "Linux Ubuntu 26.04",
-    "birthday": "2007-10-19",
-    "school": "Self-taught",
-    "role": "Student",
-    "ide": "VS Code"
-  },
-  "languages": {
-    "programming": [
-      "JavaScript",
-      "TypeScript",
-      "Java",
-      "Python"
-    ],
-    "computer": [
-      "HTML",
-      "CSS",
-      "JSON",
-      "YAML"
-    ],
-    "real": [
-      "English"
-    ]
-  },
-  "hobbies": {
-    "competitive": "TODO: e.g. Competitive CS2",
-    "creative": "TODO: e.g. Minecraft (Server Hosting + Builds)"
-  },
-  "contact": {
-    "email": "bigman@synz.xyz",
-    "discord": "lesynz"
-  },
+  "header": "dylan@lesynz",
+  "birthday": "2007-10-19",
   "github": {
     "username": "LeSynz",
+    "count_forks": false,
+    "include_private": true,
     "exclude_repos": [],
-    "exclude_langs": [],
-    "count_forks": false
+    "exclude_paths": [
+      "**/node_modules/**",
+      "**/vendor/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.min.js",
+      "**/*.min.css",
+      "**/*.map",
+      "package-lock.json",
+      "yarn.lock",
+      "pnpm-lock.yaml",
+      "composer.lock",
+      "Cargo.lock"
+    ]
   },
+  "ascii_art": "assets/ascii-art.txt",
+  "output": "generated/profile-card.svg",
+  "sections": [
+    {
+      "rows": [
+        [
+          "OS",
+          "Linux Ubuntu 26.04"
+        ],
+        [
+          "Uptime",
+          "{{uptime}}"
+        ],
+        [
+          "Host",
+          "Self-taught"
+        ],
+        [
+          "Kernel",
+          "Student"
+        ],
+        [
+          "IDE",
+          "VS Code, Claude Code"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Languages.Programming",
+          "JavaScript, TypeScript, Java, Python"
+        ],
+        [
+          "Languages.Computer",
+          "HTML, CSS, JSON, YAML"
+        ],
+        [
+          "Languages.Real",
+          "English"
+        ]
+      ]
+    },
+    {
+      "rows": [
+        [
+          "Hobbies.Competitive",
+          "TODO: something you actually play"
+        ],
+        [
+          "Hobbies.Creative",
+          "Discord bots, APIs, automation"
+        ]
+      ]
+    },
+    {
+      "title": "Contact",
+      "rows": [
+        [
+          "Email",
+          "bigman@synz.xyz"
+        ],
+        [
+          "Site",
+          "synz.xyz"
+        ],
+        [
+          "Discord",
+          "lesynz"
+        ]
+      ]
+    },
+    {
+      "title": "GitHub Stats",
+      "rows": [
+        [
+          "Repos",
+          "{{repos}} {Contributed: {{contributed}}}",
+          "Stars",
+          "{{stars}}"
+        ],
+        [
+          "Commits",
+          "{{commits}}",
+          "Followers",
+          "{{followers}}"
+        ],
+        [
+          "Lines of Code on GitHub",
+          "{{loc}}"
+        ]
+      ]
+    }
+  ],
   "theme": {
     "background": "#111110",
-    "page": "#0a0a09",
     "border": "#222220",
     "accent": "#39ff6a",
-    "accent_dim": "#1a5c30",
+    "rule": "#1a5c30",
     "label": "#7f817c",
     "value": "#c8cac4",
     "leader": "#333330",
+    "art": "#39ff6a",
+    "art_shadow": "#1a5c30",
     "addition": "#39ff6a",
     "deletion": "#ff5c57",
-    "font": "Share Tech Mono",
-    "font_display": "Syne"
+    "font_size": 12,
+    "line_height": 15
   }
 }
