@@ -89,7 +89,11 @@ async function fetchRepos(token, login, { countForks, excludeRepos, includePriva
 }
 
 // GitHub only hands out commit totals a year at a time, so walk them all.
-// restrictedContributionsCount is the private stuff.
+//
+// Careful with restricted: it's every private contribution *type* lumped
+// together (commits, PRs, repos created), not just commits. A token that can
+// see your private repos itemises them into totalCommitContributions instead,
+// so adding both would count PRs as commits. Caller picks.
 async function fetchCommitCount(token, login, createdAt) {
   const startYear = new Date(createdAt).getUTCFullYear();
   const currentYear = new Date().getUTCFullYear();
@@ -104,7 +108,8 @@ async function fetchCommitCount(token, login, createdAt) {
     }
   `;
 
-  let total = 0;
+  let commits = 0;
+  let restricted = 0;
   for (let year = startYear; year <= currentYear; year++) {
     const data = await graphql(token, query, {
       login,
@@ -112,7 +117,32 @@ async function fetchCommitCount(token, login, createdAt) {
       to: `${year}-12-31T23:59:59Z`,
     });
     const c = data.user.contributionsCollection;
-    total += c.totalCommitContributions + c.restrictedContributionsCount;
+    commits += c.totalCommitContributions;
+    restricted += c.restrictedContributionsCount;
+  }
+  return { commits, restricted };
+}
+
+// Counts commits by author email instead of asking GitHub for contributions.
+// Picks up commits GitHub never credited you for because the address on them
+// isn't linked to your account. Own repos' default branches only, so commits to
+// other people's repos don't show up here.
+async function fetchCommitCountByEmails(token, login, repos, emails) {
+  const query = `
+    query($owner: String!, $name: String!, $emails: [String!]) {
+      repository(owner: $owner, name: $name) {
+        defaultBranchRef { target { ... on Commit {
+          history(author: { emails: $emails }) { totalCount }
+        } } }
+      }
+    }
+  `;
+
+  let total = 0;
+  for (const repo of repos) {
+    if (!repo.head) continue;
+    const data = await graphql(token, query, { owner: login, name: repo.name, emails });
+    total += data.repository?.defaultBranchRef?.target?.history?.totalCount ?? 0;
   }
   return total;
 }
@@ -210,4 +240,4 @@ function countLinesOfCode(repos, { token, login, cachePath, excludePaths = [] })
   return { additions, deletions };
 }
 
-module.exports = { fetchRepos, fetchCommitCount, countLinesOfCode };
+module.exports = { fetchRepos, fetchCommitCount, fetchCommitCountByEmails, countLinesOfCode };

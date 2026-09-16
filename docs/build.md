@@ -17,7 +17,7 @@ literal, so `"{{repos}} {Contributed: {{contributed}}}"` keeps its outer pair.
 | `{{uptime}}` | age from `birthday`, as years / months / days |
 | `{{repos}}` `{{contributed}}` | owned repo count (see `include_private`), repos contributed to |
 | `{{stars}}` `{{followers}}` | stars across those same repos, follower count |
-| `{{commits}}` | all-time commits, private contributions included |
+| `{{commits}}` | all-time commits, private ones included |
 | `{{loc}}` | net lines with coloured `++` / `--` breakdown |
 | `{{private}}` | private repo count (needs `include_private`) |
 | `{{username}}` `{{year}}` | GitHub handle, current year |
@@ -39,6 +39,21 @@ private repos feed `{{repos}}`, `{{stars}}` and `{{loc}}`. Commits ignore this
 flag — `contributionsCollection` reports private commits as
 `restrictedContributionsCount`, which is always added in, provided
 *Settings -> Profile -> Include private contributions on my profile* is enabled.
+
+**Commit counting.** `github.commit_emails` counts commits by author email,
+walking your repos' default branches, instead of asking GitHub for contribution
+totals. Leave it empty to use the contributions API instead. The tradeoff: this only sees
+your own non-fork repos, so commits to other people's repos aren't counted.
+
+`github.commit_offset` is added on top. It covers commits authored from an
+address that isn't on the account — real commits nothing in the API can see,
+counted once and added back as a number so the address itself stays private.
+
+It also fixes the commit count. `restrictedContributionsCount` lumps *every*
+private contribution type together — commits, PRs, repos created — so adding it
+to `totalCommitContributions` reports PRs as commits. When the token can see your
+private repos those commits land in `totalCommitContributions` properly, so the
+restricted number is only used as a fallback when it can't.
 
 Turning it on publishes aggregate signal about private work (how many repos, how
 many lines) but never names or code. Two details make that safe: the LOC cache is

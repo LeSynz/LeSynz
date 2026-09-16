@@ -5,6 +5,10 @@
     "username": "LeSynz",
     "count_forks": false,
     "include_private": true,
+    "commit_emails": [
+      "bigman@synz.xyz"
+    ],
+    "commit_offset": 137,
     "exclude_repos": [],
     "exclude_paths": [
       "**/node_modules/**",
@@ -40,7 +44,7 @@
         ],
         [
           "Kernel",
-          "Student"
+          "Linux 7.0.0-31-generic"
         ],
         [
           "IDE",
