@@ -123,6 +123,29 @@ async function fetchCommitCount(token, login, createdAt) {
   return { commits, restricted };
 }
 
+// Pull requests you've opened, anywhere the token can see.
+async function fetchPullRequests(token, login) {
+  const query = `
+    query($login: String!) {
+      user(login: $login) {
+        all: pullRequests { totalCount }
+        merged: pullRequests(states: MERGED) { totalCount }
+        open: pullRequests(states: OPEN) { totalCount }
+        closed: pullRequests(states: CLOSED) { totalCount }
+        contributionsCollection { totalPullRequestReviewContributions }
+      }
+    }
+  `;
+  const u = (await graphql(token, query, { login })).user;
+  return {
+    total: u.all.totalCount,
+    merged: u.merged.totalCount,
+    open: u.open.totalCount,
+    closed: u.closed.totalCount,
+    reviews: u.contributionsCollection.totalPullRequestReviewContributions,
+  };
+}
+
 // Counts commits by author email instead of asking GitHub for contributions.
 // Picks up commits GitHub never credited you for because the address on them
 // isn't linked to your account. Own repos' default branches only, so commits to
@@ -240,4 +263,10 @@ function countLinesOfCode(repos, { token, login, cachePath, excludePaths = [] })
   return { additions, deletions };
 }
 
-module.exports = { fetchRepos, fetchCommitCount, fetchCommitCountByEmails, countLinesOfCode };
+module.exports = {
+  fetchRepos,
+  fetchCommitCount,
+  fetchCommitCountByEmails,
+  fetchPullRequests,
+  countLinesOfCode,
+};

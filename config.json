@@ -48,7 +48,7 @@
         ],
         [
           "IDE",
-          "VS Code, Claude Code"
+          "VS Code"
         ]
       ]
     },
@@ -111,6 +111,12 @@
           "{{commits}}",
           "Followers",
           "{{followers}}"
+        ],
+        [
+          "Pull Requests",
+          "{{prs}} {Merged: {{prs_merged}}}",
+          "Open",
+          "{{prs_open}}"
         ],
         [
           "Lines of Code on GitHub",

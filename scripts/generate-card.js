@@ -9,6 +9,7 @@ const {
   fetchRepos,
   fetchCommitCount,
   fetchCommitCountByEmails,
+  fetchPullRequests,
   countLinesOfCode,
 } = require('./lib/github');
 const { buildSVG, ageBreakdown, esc } = require('./lib/render');
@@ -74,6 +75,7 @@ async function main() {
     stats = {
       repoCount: 12, contributedCount: 3, starCount: 7, followerCount: 21, privateCount: 4,
       commitCount: 486, loc: { additions: 128_400, deletions: 41_250 },
+      prs: { total: 40, merged: 35, open: 3, closed: 2, reviews: 8 },
     };
   } else {
     const token = process.env.GH_TOKEN;
@@ -109,6 +111,9 @@ async function main() {
       commitCount += commitOffset;
     }
 
+    console.log('counting pull requests...');
+    const prs = await fetchPullRequests(token, username);
+
     console.log(`counting lines across ${overview.repos.length} repos...`);
     const loc = countLinesOfCode(overview.repos, {
       token,
@@ -117,7 +122,7 @@ async function main() {
       excludePaths: pathspecs,
     });
 
-    stats = { ...overview, commitCount, loc };
+    stats = { ...overview, commitCount, loc, prs };
   }
 
   const tokens = {
@@ -130,6 +135,11 @@ async function main() {
     stars: num(stats.starCount),
     followers: num(stats.followerCount),
     commits: num(stats.commitCount),
+    prs: num(stats.prs.total),
+    prs_merged: num(stats.prs.merged),
+    prs_open: num(stats.prs.open),
+    prs_closed: num(stats.prs.closed),
+    reviews: num(stats.prs.reviews),
     year: new Date().getUTCFullYear(),
     locRich: locTokens(config.theme, stats.loc.additions, stats.loc.deletions),
   };
